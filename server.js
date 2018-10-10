@@ -5,7 +5,7 @@ const port = 3000;
 //Model
 const Pokemon = require('./models/pokemon')
 //Middleware
-app.use(express.static(__dirname + '/public'));
+app.use(express.static('css'));
 
 //Stuffs
 app.get('/pokemon', (req, res) => {
