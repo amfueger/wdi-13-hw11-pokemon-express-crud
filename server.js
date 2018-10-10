@@ -6,7 +6,9 @@ const port = 3000;
 const Pokemon = require('./models/pokemon')
 
 
-
+app.get('/pokemon', (req, res) => {
+	res.send(Pokemon);
+});
 
 
 
