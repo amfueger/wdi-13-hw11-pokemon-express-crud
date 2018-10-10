@@ -14,7 +14,9 @@ li {color: Navy;}
 	<ul class="pokemon">
 	<%for(let i = 0; i < pokemon.length; i++) {%>
 		<li>Name: <%=pokemon[i].name%>
+			<a href='/pokemon/<%=i%>'>Pokemon's page</a>
 		<%}%></li>
 	</ul>
+
 </body>
 </html>
