@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<h1>Pokemon Names</h1>
-	<%for(let i = 0; i < pokemon.length; i++) {%>
-		<%=pokemon[i].name%>
-		<%}%>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<title>Pokemon Names</title>
+<style>
+ul {border: 1px solid red;}
+body {font-family: "Verdana", Geneva, san-serif;}
+li {color: Navy;}
+</style>
 </head>
 <body>
-
+<h1 style="color:blue;">Pokemon Names</h1>
+	<ul class="pokemon">
+	<%for(let i = 0; i < pokemon.length; i++) {%>
+		<li>Name: <%=pokemon[i].name%>
+		<%}%></li>
+	</ul>
 </body>
 </html>
