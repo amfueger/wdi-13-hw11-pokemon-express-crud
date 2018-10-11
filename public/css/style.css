@@ -1,0 +1,30 @@
+body {
+	border: 1px solid white;
+	border-radius: 10px;
+	width: 75%;
+	padding: 10px;
+	background-image: url('http://getwallpapers.com/wallpaper/full/b/9/f/53776.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+ul {
+	border: 3px solid red;
+	border-radius: 10px;
+	width: 50%;
+	font-family: 'Lato', sans-serif;
+}
+li {
+	color: purple;
+	padding: 5px;
+	font-size: 20px;
+}
+ h1 {
+ 	color:white;
+ 	font-family: 'Kalam', cursive;
+ 	font-size: 40px;
+ }
+ .name {
+ 	font-weight: bold;
+ }

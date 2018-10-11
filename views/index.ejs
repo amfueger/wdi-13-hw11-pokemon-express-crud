@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Kalam|Lato" rel="stylesheet">
 	<title>Pokemon Names</title>
-<style>
-ul {border: 1px solid red;}
-body {font-family: "Verdana", Geneva, san-serif;}
-li {color: Navy;}
-</style>
+
 </head>
 <body>
-<h1 style="color:blue;">Pokemon Names</h1>
-	<ul class="pokemon">
+<h1>Pokemon Names</h1>
+	<ul>
 	<%for(let i = 0; i < pokemon.length; i++) {%>
-		<li>Name: <%=pokemon[i].name%>
-			<a href='/pokemon/<%=i%>'>Pokemon's page</a>
+		<li class="pokemon"><span class="name">Name:</span> <%=pokemon[i].name%>
+	
+			<a href='pokemon/<%=i%>'>Pokemon's page</a>
 		<%}%></li>
 	</ul>
 

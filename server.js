@@ -5,7 +5,7 @@ const port = 3000;
 //Model
 const Pokemon = require('./models/pokemon')
 //Middleware
-app.use(express.static('css'));
+app.use(express.static('public'));
 
 //Stuffs
 app.get('/pokemon', (req, res) => {
@@ -17,31 +17,6 @@ app.get('/pokemon/:id', (req, res) => {
 		pokemon: Pokemon[req.params.id]
 	});
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 app.listen(port, () => {
