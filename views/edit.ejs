@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h1>Change your Pokemon!</h1>
+	<br>
+	<form method="POST" action="/pokemon/<%=id%>?_method=PUT">
+		Name: <input type="text" name="name" value="<%=pokemon.name%>"/></br>
+		Image: <input type="link" name="img" value="<%=pokemon.img%>"/></br>
+		<input type="submit" name="change">
+	</form>
+</body>
+</html>
